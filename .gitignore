@@ -1,0 +1,7 @@
+/build
+/cache_demo
+*.o
+*.exe
+*.out
+.DS_Store
+.vscode
