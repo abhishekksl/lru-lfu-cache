@@ -1,6 +1,6 @@
 // cache_demo.cpp
 // High-performance LRU & LFU cache implementations with a simple micro-benchmark.
-// Written in modern C++17. Clean, minimal, and interview-friendly.
+// Written in modern C++17.
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -72,7 +72,7 @@ private:
      - Freq → list of keys
      - Hash map for key → (value, freq)
      - Tracks minimum frequency for quick eviction
-   Very interview-friendly implementation.
+  
    ============================================================ */
 
 template <typename K, typename V>
