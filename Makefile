@@ -1,12 +1,12 @@
-CXX = g++
-CXXFLAGS = -O3 -march=native -std=c++17 -pthread
-SRC = src/cache_demo.cpp
-OUT = cache_demo
+CXX      := g++
+CXXFLAGS := -std=c++17 -O3 -march=native -Wall -Wextra -I src/include
+TARGET   := cache_benchmark
+SRC      := src/main.cpp
 
-all: $(OUT)
+all: $(TARGET)
 
-$(OUT): $(SRC)
-	$(CXX) $(CXXFLAGS) $(SRC) -o $(OUT)
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
 
 clean:
-	rm -f $(OUT)
+	rm -f $(TARGET)
